@@ -1,0 +1,125 @@
+@font-face{
+    font-family: ProximaBold;
+    src: url(./../fonts/Proxima\ Nova\ Bold.otf)
+}
+@font-face{
+    font-family: proximanovalight;
+    src: url(./../fonts/proximanovalight.ttf)
+}
+@font-face{
+    font-family: ProximaNovaRegular;
+    src: url(./../fonts/ProximaNovaRegular.ttf)
+}
+/* Basic Rules */
+*{
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+}
+@media (min-width: 1200px) {
+    .container {
+      max-width: 1040px;
+    }
+  }
+  
+/* Headers Rules */
+h1,h2,h3,h4,h5,h6{
+    color: #100C29;
+}
+h1{
+    font:50px proximanovalight,'Courier New', Courier, monospace;
+}
+@media (max-width:767px){
+    h1{
+        font:30px proximanovalight,'Courier New', Courier, monospace;
+    }
+}
+h2{
+    font:40px  ProximaNovaRegular, 'Courier New', Courier, monospace;;
+}
+h3{
+    font: 30px ProximaBold, 'Courier New', Courier;
+    text-transform: uppercase;
+}
+h4{
+    font: 22px ProximaBold, 'Courier New', Courier, monospac;
+}
+h5{
+    font:32px  ProximaNovaRegular, 'Courier New', Courier, monospace;;
+}
+h6{
+    font:16px  ProximaNovaRegular, 'Courier New', Courier, monospace;;
+}
+/* P Rule */
+p{
+    font-family: ProximaNovaRegular, 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color:#4f5b60;
+}
+/* Links Rules */
+a{
+    color:#615b9b;
+}
+a:hover{
+    color:#766cdc;
+}
+/* Button Rules */
+.button{
+    border: 2px solid #615b9b;
+    border-radius: 5px;
+    padding: 6px 12px;
+    background-color: white;
+    color: #615b9b;
+    font-family: ProximaBold , 'Courier New', Courier, monospace;
+}
+.button:hover{
+    color:white;
+    background-color: #615b9b;
+}
+.button:focus{
+    outline: none;
+}
+/* Image Rule */
+img{
+    width: 100%;
+}
+/* Input Rule */
+input{
+    padding: 5px 5px;
+    margin: 10px auto;
+}
+input:focus{
+    outline: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 1;
+}
+/* Topics Rules */
+.medical{
+    color:#73ba9d;
+    background:url(./../Images/second-part/m.png) no-repeat;
+    background-position:90% 90%  ;
+    background-size:150px;
+}
+.medicalH:hover,.medical{
+    background-color:#73ba9d;
+}
+.engineering{
+    color:#6baac1;
+    background:url(./../Images/second-part/e.png) no-repeat;
+    background-position:90% 90%  ;
+    background-size:150px;
+}
+.engineeringH:hover,.engineering{
+    background-color:#6baac1;
+
+}
+.consult{
+    color:#6b83c1;
+    background:url(./../Images/second-part/c.png) no-repeat;
+    background-position:90% 90%  ;
+    background-size:150px;
+}
+.consultH:hover,.consult{
+    background-color:#6b83c1;
+}
